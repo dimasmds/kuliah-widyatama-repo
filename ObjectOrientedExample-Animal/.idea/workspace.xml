@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74c01ece-ad19-4a5d-9cab-879ecd9d5a2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ObjectOrientedExample/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObjectOrientedExample/src/Kendaraan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObjectOrientedExample/src/Mobil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObjectOrientedExample/src/MobilBalap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObjectOrientedExample/src/MobilPolisi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObjectOrientedExample/src/Motor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObjectOrientedExample/src/MotorBalap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ObjectOrientedExample/src/MotorPolisi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/widyatama/interfaces/IFly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/widyatama/interfaces/IRun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/widyatama/model/Bird.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/widyatama/model/Horse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/widyatama/model/abstraction/Animal.java" afterDir="false" />
-    </list>
+    <list default="true" id="74c01ece-ad19-4a5d-9cab-879ecd9d5a2a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
