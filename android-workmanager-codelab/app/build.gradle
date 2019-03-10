@@ -1,0 +1,63 @@
+/*
+ * Copyright (C) 2018 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion versions.compileSdk
+    defaultConfig {
+        applicationId "com.example.background"
+        renderscriptTargetApi 11
+        renderscriptSupportModeEnabled true
+        vectorDrawables {
+            useSupportLibrary true
+        }
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        buildToolsVersion "28.0.3"
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // Workaround for WorkManager 1.0.0-alpha9
+    // From: https://developer.android.com/jetpack/docs/release-notes
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+}
+
+dependencies {
+    implementation "android.arch.work:work-runtime-ktx:$versions.work"
+    implementation "androidx.appcompat:appcompat:$versions.androidx"
+    implementation "androidx.constraintlayout:constraintlayout:$versions.constraint_layout"
+    implementation "androidx.legacy:legacy-support-v4:$versions.androidx_legacy"
+    implementation "com.github.bumptech.glide:glide:$versions.glide"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin"
+
+}
