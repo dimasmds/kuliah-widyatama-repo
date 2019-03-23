@@ -1,14 +1,13 @@
 package com.example.background.workers
 
 import android.content.Context
-import android.nfc.Tag
 import android.util.Log
 import androidx.work.Worker
 import androidx.work.WorkerParameters
 import com.example.background.OUTPUT_PATH
 import java.io.File
 
-class CleanupWorker(ctx: Context, params: WorkerParameters) : Worker(ctx, params) {
+class CleanupWorker(ctx: Context, params: WorkerParameters) : Worker(ctx, params){
 
     private val TAG by lazy { CleanupWorker::class.java.simpleName }
 
