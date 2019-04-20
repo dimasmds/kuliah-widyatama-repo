@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name" translatable="false">Movie Directory</string>
+    <string name="pref_daily_reminder" translatable="false">com.widyatama.moviecatalogue.pref_daily_reminder</string>
+    <string name="pref_release_reminder" translatable="false">com.widyatama.moviecatalogue.pref_release_reminder</string>
+    <string name="pref_language" translatable="false">com.widyatama.moviecatalogue.pref_language</string>
+    <string name="pref_theme" translatable="false">com.widyatama.moviecatalogue_pref_theme</string>
+
+    <string name="search_movie">Search Movie…</string>
+    <string name="search">Search</string>
+    <string name="dummy_desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</string>
+    <string name="thumbnail_movie">Thumbnail Movie</string>
+    <string name="dummy_years">1999</string>
+    <string name="dummy_production">Author Name</string>
+    <string name="dummy_movie_title">Title Movie Here</string>
+    <string name="dummy_imdb">8.9</string>
+    <string name="_87">87%</string>
+    <string name="overview">Overview</string>
+    <string name="rating">Rating</string>
+    <string name="duration">Duration</string>
+    <string name="language">Language</string>
+    <string name="dummy_rating">⭐️ %.1f</string>
+    <string name="voting">(%d votes)</string>
+    <string name="dummy_language">English</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="icon_brand">Icon Brand</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="change_language">🇬🇧 \tEnglish</string>
+    <string name="favorite">Favorite</string>
+    <string name="favorited">Favorited</string>
+    <string name="message_fail_favorite">Failed adding to Favorite, Try Again</string>
+    <string name="message_fail_add_favorite">Failed to delete from favorite, try again !</string>
+    <string name="back_button">Back Button</string>
+    <string name="toolbar_background">Toolbar Background</string>
+    <string name="similar_poster">Similar Poster</string>
+    <string name="similar_message">You may also like</string>
+    <string name="message_similar_not_found">Similar not found</string>
+    <string name="play_video">Play Video</string>
+    <string name="toolbar_fade">toolbar fade</string>
+    <string name="favorite_button">Favorite Button</string>
+    <string name="unknown">Unknown</string>
+    <string name="summary_daily">Get daily reminder</string>
+    <string name="summary_release">Get release reminder</string>
+    <string name="daily_content_text">Checkout latest movie for you</string>
+    <string name="setting">Settings</string>
+    <string name="setting_preference">Preference Settings</string>
+    <string name="notif_new_movie">New Movie has been release !</string>
+    <string name="no_movies_found">No movie(s) found</string>
+    <string name="empty_query">Search query can\'t be empty !</string>
+    <string name="minutes">Minutes</string>
+</resources>

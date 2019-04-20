@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp">
+
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="218dp">
+        <ImageView
+            android:id="@+id/detailActivityThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/thumbnail_movie"
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:id="@+id/detailActivityPlayVideo"
+            android:src="@drawable/ic_play_circle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/play_video" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/detailActivityTextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/neosans"
+            android:text="@string/dummy_movie_title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?attr/textHeaderColor"/>
+
+        <TextView
+            android:id="@+id/detailActivityTextViewYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/dummy_years"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailActivityTextViewProduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_production"
+            android:textStyle="normal" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/detailActivityLinearLayoutCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/labelLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/language"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/detailActivityTextViewLanguage" />
+
+            <TextView
+                android:id="@+id/labelRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rating"
+                android:layout_below="@+id/labelLanguage"
+                android:layout_alignEnd="@+id/labelLanguage"
+                android:layout_alignParentStart="true"
+                android:layout_alignBottom="@+id/detailActivityTextViewRating" />
+
+            <TextView
+                android:id="@+id/labelDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/duration"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/labelRating"
+                android:layout_alignEnd="@id/labelLanguage"
+                android:layout_alignBottom="@+id/detailActivityTextViewDuration" />
+
+            <TextView
+                android:id="@+id/detailActivityTextViewLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_87"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/labelLanguage" />
+
+            <TextView
+                android:id="@+id/detailActivityTextViewRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dummy_imdb"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/detailActivityTextViewLanguage"
+                android:layout_toEndOf="@id/labelRating" />
+
+            <TextView
+                android:id="@+id/detailActivityTextViewDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_87"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/detailActivityTextViewRating"
+                android:layout_toEndOf="@id/labelDuration" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
